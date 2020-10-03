@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"    
+import { Link } from "gatsby"
+// import bk_img from '../images/bk.jpg'
 
 const ListLink = props => (
     <li style={{ display: "inline-block", marginRight: '1rem'}}>
@@ -10,21 +11,23 @@ const ListLink = props => (
 export default function Layout( {children} ){
     
     return(
-        <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem'}}>
-            <header style={{ marginBottom: '1.5rem'}}>
-                <Link to="/" style={{textShadow: 'none', backgroundImage: 'none'}}>
-                    <h3 style={{ display: 'inline'}}>
-                        My Sweet site
-                    </h3>
-                </Link>
+        // <div style={{backgroundImage: `url(${bk_img})` }}>
+            <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem' }}>
+                <header style={{ marginBottom: '1.5rem'}}>
+                    <Link to="/" style={{textShadow: 'none', backgroundImage: 'none'}}>
+                        <h2 style={{ display: 'inline'}}>
+                            <i>A.Nam</i>
+                        </h2>
+                    </Link>
 
-                <ul style={{ listStyle: 'none', float: 'right'}}>
-                    <ListLink to="/" >Home</ListLink>
-                    <ListLink to="/about">About</ListLink>
-                    <ListLink to="/contact">Contact</ListLink>
-                </ul>
-            </header>
-            {children}
-        </div>
+                    <ul style={{ listStyle: 'none', float: 'right'}}>
+                        <ListLink to="/" >Home</ListLink>
+                        <ListLink to="/about">About</ListLink>
+                        <ListLink to="/contact">Contact</ListLink>
+                    </ul>
+                </header>
+                {children}
+            </div>
+        // </div>
     )
 }

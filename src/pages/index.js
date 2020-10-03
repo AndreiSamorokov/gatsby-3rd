@@ -1,14 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
+import h_bk_img from '../images/h-bk-1.jpg'
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+      <img src={h_bk_img} alt="" />
+      <h1>Let's make fulfill your Dream!</h1>
       <p>
-        What do I like to do? Lots of course but definitely enjoy building
-        websites.
-      </p>
+        I will provide consistent passionate attitude and high speed with qualified work to get your dream. 
+      </p>  
     </Layout>
   )
 }
